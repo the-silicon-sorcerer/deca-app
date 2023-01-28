@@ -1,11 +1,10 @@
 {
-  "name": "business-card",
+  "name": "next13-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start"
   },
