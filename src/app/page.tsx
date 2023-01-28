@@ -2,10 +2,9 @@ import Image from "next/image";
 import getServerSession from "../utils/getServerSession";
 import SignIn from "../components/sign-in/signIn.compoent";
 import Signout from "../components/sign-out/signout.component";
-import { trpc } from "../utils/trpcProvider";
+import TrpcMessage from "../components/trpcMessage/trpcMessage";
 
 import style from "./page.module.css";
-import TrpcMessage from "../components/trpcMessage/trpcMessage";
 
 const HomePage = async () => {
   const session = await getServerSession();
