@@ -1,0 +1,82 @@
+.unAuthedMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.unAuthedMain > p {
+  font-size: 0.6rem;
+  margin: 15px 0px;
+  color: white;
+  text-decoration: underline;
+}
+
+.unAuthedMain > button {
+  background-color: rgb(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.unAuthedMain > button:hover {
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.unAuthedMain > button:active {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.authedMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inset {
+  padding: 10px;
+  background-image: linear-gradient(
+    135deg,
+    rgb(255, 66, 120),
+    rgb(148, 0, 222)
+  );
+  border-radius: 50px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.2);
+}
+
+.imageContainer {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: 3px solid rgb(255, 85, 221);
+  overflow: hidden;
+}
+
+.welcome {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.authedMain > button {
+  background-color: rgb(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.authedMain > button:hover {
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.authedMain > button:active {
+  background-color: rgb(0, 0, 0, 0.5);
+}
