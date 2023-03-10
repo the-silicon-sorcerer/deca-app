@@ -1,4 +1,3 @@
-import AuthProvider from "../utils/authProvider";
 import { TrpcProvider } from "../utils/trpcProvider";
 import { Inter } from "@next/font/google";
 
@@ -11,9 +10,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en" className={inter.className}>
       <head />
       <TrpcProvider>
-        <AuthProvider>
-          <body>{children}</body>
-        </AuthProvider>
+        <body>{children}</body>
       </TrpcProvider>
     </html>
   );
