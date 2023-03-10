@@ -1,5 +1,3 @@
-import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
-
 import { prisma } from "../db";
 
 const createInnerTRPCContext = () => {
@@ -8,7 +6,7 @@ const createInnerTRPCContext = () => {
   };
 };
 
-export const createTRPCContext = async (opts: CreateNextContextOptions) => {
+export const createTRPCContext = () => {
   return createInnerTRPCContext();
 };
 
