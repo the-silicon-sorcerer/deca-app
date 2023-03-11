@@ -1,8 +1,31 @@
+datasource db {
+    provider     = "mysql"
+    url          = env("DATABASE_URL")
+    relationMode = "prisma"
+}
+
 generator client {
     provider = "prisma-client-js"
 }
 
-datasource db {
-    provider = "postgresql"
-    url      = env("DATABASE_URL")
+model IndicatorData {
+    id         String     @id @default(cuid())
+    area       String     @db.Text
+    indicator  String     @db.Text
+    text       String     @db.Text
+    Categories Category[]
+}
+
+enum Categories {
+    MANAGMENT
+    MARKETING
+    FINANCE
+    HOSPITIALITY
+    ENTREPRENEUR
+}
+
+model Category {
+    id         Categories      @id
+    name       Categories
+    indicators IndicatorData[]
 }
