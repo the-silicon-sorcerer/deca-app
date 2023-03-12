@@ -1,0 +1,17 @@
+.container {
+  transform: translateY(50%);
+  display: flex;
+  overflow: scroll;
+  padding-right: 0px;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.container div {
+  margin-right: 20px;
+}
+
+.offset {
+  width: 24px;
+  background-color: red;
+}

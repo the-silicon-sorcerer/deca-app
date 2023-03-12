@@ -10,10 +10,13 @@ generator client {
 
 model IndicatorData {
     id         String     @id @default(cuid())
-    area       String     @db.Text
     indicator  String     @db.Text
     text       String     @db.Text
+    area       Area       @relation(fields: [areaId], references: [id])
+    areaId     String
     Categories Category[]
+
+    @@index([areaId])
 }
 
 enum Categories {
@@ -28,4 +31,10 @@ model Category {
     id         Categories      @id
     name       Categories
     indicators IndicatorData[]
+}
+
+model Area {
+    id            String          @id
+    name          String          @db.Text
+    IndicatorData IndicatorData[]
 }

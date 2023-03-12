@@ -1,0 +1,202 @@
+:root {
+  /* CATEGORY COLORS */
+
+  --managmentYellow: #f7bc00;
+  --entrepreneurGrey: #7c8689;
+  --financeGreen: #009b46;
+  --hospitalityBlue: #0b74bf;
+  --marketingRed: #cc1d36;
+
+  /* STATES  */
+
+  --iconShadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+  /* STRUCTURE SETTINGS */
+
+  --pagePadding: 0px 24px;
+  --elementMarginBottom: 20px;
+  --borderRadius: 5px;
+  --elementFixedHigh: 50px;
+}
+
+/* CSS RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  background-color: transparent !important;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+}
+
+/* FONTS */
+
+/* GLOBAL STYLES  */
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+  color-scheme: light;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding: var(--pagePadding);
+  background-color: white;
+}
+
+/* UTILITY CLASSES */
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+.link {
+  width: 100%;
+}
+
+/* HEADING STYLES */
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+/* BODY FONT STYLES */
+
+.body-ExtraLarge {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 125%;
+}
+
+.body-Large {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+}
+
+.body-Medium {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.body-Small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+}
+
+.body-ExtraSmall {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+}
+
+.body-B-ExtraLarge {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 125%;
+}
+
+.body-B-Large {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+}
+
+.body-B-Medium {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.body-B-Small {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 125%;
+}
+
+.body-B-ExtraSmall {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 125%;
+}

@@ -1,0 +1,24 @@
+.searchContainer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchBox {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  border-radius: var(--borderRadius);
+  padding: 0px 10px;
+}
+
+.searchBox > input {
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
