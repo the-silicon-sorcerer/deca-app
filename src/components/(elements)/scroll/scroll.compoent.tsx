@@ -13,7 +13,7 @@ const Scroll = () => {
   let prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos > currentScrollPos && currentScrollPos > 0) {
       hide(false);
     } else {
       hide(true);

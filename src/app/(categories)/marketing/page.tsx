@@ -21,7 +21,7 @@ const MarketingPage = async () => {
         },
       },
     },
-    take: 10,
+    take: 50,
   });
   const generateIndicators = () => {
     const gen = [];
