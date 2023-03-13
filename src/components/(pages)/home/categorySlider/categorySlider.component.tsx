@@ -1,5 +1,6 @@
 import Link from "next/link";
 import IconBox from "../../../(elements)/iconBox/iconBox.component";
+import { captializeFirst } from "../../../../utils/capitalizeFirst";
 import style from "./categorySlider.module.css";
 
 interface CategoryObj {
@@ -22,7 +23,17 @@ const CategorySlider = ({ categories }: CategorySliderProps) => {
           style={{ marginLeft: obj.link === "/managment" ? "24px" : undefined }}
           key={Math.random()}
         >
-          <IconBox Icon={obj.Icon} size="80px" background={obj.color} />
+          <div className={style.iconContainer}>
+            <IconBox
+              Icon={obj.Icon}
+              size="80px"
+              background={obj.color}
+              shadow
+            />
+            <p className="body-Small">
+              {captializeFirst(obj.link.split("/")[1])}
+            </p>
+          </div>
         </Link>
       );
     }

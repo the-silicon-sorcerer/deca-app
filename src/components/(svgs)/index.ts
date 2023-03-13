@@ -7,3 +7,6 @@ export { default as FinanceIcon } from "./financeIcon.svg";
 export { default as TourismIcon } from "./tourismIcon.svg";
 export { default as EntrepreneurIcon } from "./entrepreneurIcon.svg";
 export { default as ManagementIcon } from "./managmentIcon.svg";
+export { default as ArrowIconSmall } from "./arrowIconSmall.svg";
+export { default as BackIcon } from "./backIcon.svg";
+export { default as UpArrowIcon } from "./upArrowIcon.svg";

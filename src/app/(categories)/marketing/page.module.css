@@ -1,0 +1,26 @@
+.header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 20px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  background-color: var(--marketingRed);
+}
+
+.pageContainer > * {
+  margin-bottom: 20px;
+}
+
+.indicatorContainer > * {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 700px) {
+  .indicatorContainer {
+    padding: 0px 150px;
+  }
+}

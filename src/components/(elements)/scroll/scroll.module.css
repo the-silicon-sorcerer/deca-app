@@ -1,0 +1,13 @@
+.container {
+  position: fixed;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  gap: 10px;
+  background-color: var(--marketingRed);
+  transition: bottom 1s;
+}

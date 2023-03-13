@@ -1,0 +1,10 @@
+.indicatorContainer {
+  padding: 20px;
+  background-color: var(--offWhite);
+  border: var(--border);
+  border-radius: var(--borderRadius);
+}
+
+.indicatorContainer > p {
+  margin-bottom: 20px;
+}

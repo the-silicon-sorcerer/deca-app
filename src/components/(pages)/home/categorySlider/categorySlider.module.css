@@ -1,5 +1,5 @@
 .container {
-  transform: translateY(50%);
+  transform: translateY(36%);
   display: flex;
   overflow: scroll;
   padding-right: 0px;
@@ -7,11 +7,17 @@
 .container::-webkit-scrollbar {
   display: none;
 }
-.container div {
+.iconContainer {
   margin-right: 20px;
 }
 
-.offset {
-  width: 24px;
-  background-color: red;
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
+}
+
+.iconContainer > p {
+  color: black;
 }
