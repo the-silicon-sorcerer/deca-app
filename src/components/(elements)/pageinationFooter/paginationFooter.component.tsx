@@ -63,26 +63,25 @@ const PaginationFooter = ({
     return gen;
   };
 
-  if (totPages >= 7) {
-    return (
-      <>
-        <div className={style.paginationContainer}>
-          {generatePagination(page)}
-        </div>
-        {children}
-        <div className={style.paginationContainer}>
-          {generatePagination(page)}
-        </div>
-      </>
-    );
-  }
   return (
     <>
-      <div className={style.paginationContainerSmall}>
+      <div
+        className={
+          totPages >= 7
+            ? style.paginationContainer
+            : style.paginationContainerSmall
+        }
+      >
         {generatePagination(page)}
       </div>
       {children}
-      <div className={style.paginationContainerSmall}>
+      <div
+        className={
+          totPages >= 7
+            ? style.paginationContainer
+            : style.paginationContainerSmall
+        }
+      >
         {generatePagination(page)}
       </div>
     </>

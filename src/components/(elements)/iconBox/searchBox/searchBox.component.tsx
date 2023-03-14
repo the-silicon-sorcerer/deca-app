@@ -12,6 +12,7 @@ interface SearchBoxProps {
   outline?: boolean;
   shadow?: boolean;
   url?: string;
+  placeholder?: string;
 }
 
 const SearchBox = ({
@@ -26,7 +27,7 @@ const SearchBox = ({
 
   const onSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
-    router.push(`${url}/search/${inputRef.current.value.trim()}/1`);
+    router.push(`${url}/${inputRef.current.value.trim()}/1`);
   };
 
   return (

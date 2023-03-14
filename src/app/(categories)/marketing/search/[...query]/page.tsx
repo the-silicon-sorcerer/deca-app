@@ -40,10 +40,6 @@ const MarketingSearchPage = async ({
     take: 10,
   });
 
-  if (indicators.length === 0) {
-    return <div>no results</div>;
-  }
-
   return (
     <InfoDisplay
       totPages={totPages}
@@ -53,6 +49,9 @@ const MarketingSearchPage = async ({
       baseUrl={`marketing/search/${
         params.query[0] && params.query[0].replace(/%20/g, " ")
       }`}
+      searchUrl="marketing/search"
+      results={params.query[0] && params.query[0].replace(/%20/g, " ")}
+      search
     />
   );
 };

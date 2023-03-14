@@ -52,6 +52,7 @@ const MarketingPage = async ({ params }: { params: { page: string } }) => {
   return (
     <InfoDisplay
       baseUrl="marketing"
+      searchUrl="marketing/search"
       indicators={indicators}
       totPages={totPages}
       page={Number(params.page)}
