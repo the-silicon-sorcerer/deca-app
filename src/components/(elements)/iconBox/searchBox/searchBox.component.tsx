@@ -1,4 +1,7 @@
+"use client";
+
 import { SearchIcon } from "../../../(svgs)";
+import { Dispatch, SetStateAction } from "react";
 
 import style from "./searchBox.module.css";
 
@@ -7,9 +10,20 @@ interface SearchBoxProps {
   before?: boolean;
   outline?: boolean;
   shadow?: boolean;
+  dispatch?: Dispatch<SetStateAction<string>>;
 }
 
-const SearchBox = ({ children, before, outline, shadow }: SearchBoxProps) => {
+const SearchBox = ({
+  children,
+  before,
+  outline,
+  shadow,
+  dispatch,
+}: SearchBoxProps) => {
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (dispatch) dispatch(e.target.value);
+  };
+
   return (
     <div className={style.searchContainer}>
       {before && children}
@@ -21,7 +35,7 @@ const SearchBox = ({ children, before, outline, shadow }: SearchBoxProps) => {
         }}
       >
         <SearchIcon style={{ fill: "#7C8689" }} />
-        <input placeholder="Search Indicators" />
+        <input onChange={onChange} placeholder="Search Indicators" />
       </div>
       {before || children}
     </div>

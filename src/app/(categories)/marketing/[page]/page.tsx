@@ -38,6 +38,7 @@ const MarketingPage = async ({ params }: { params: { page: string } }) => {
       totPages={totPages}
       page={Number(params.page)}
       color="var(--marketingRed)"
+      category="MARKETING"
     />
   );
 };
