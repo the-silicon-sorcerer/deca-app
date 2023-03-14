@@ -1,16 +1,17 @@
 "use client";
 
 import { SearchIcon } from "../../../(svgs)";
-import { Dispatch, SetStateAction } from "react";
+import { useRef } from "react";
 
 import style from "./searchBox.module.css";
+import { useRouter } from "next/navigation";
 
 interface SearchBoxProps {
   children: React.ReactNode;
   before?: boolean;
   outline?: boolean;
   shadow?: boolean;
-  dispatch?: Dispatch<SetStateAction<string>>;
+  url?: string;
 }
 
 const SearchBox = ({
@@ -18,10 +19,14 @@ const SearchBox = ({
   before,
   outline,
   shadow,
-  dispatch,
+  url,
 }: SearchBoxProps) => {
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (dispatch) dispatch(e.target.value);
+  const router = useRouter();
+  const inputRef = useRef({} as HTMLInputElement);
+
+  const onSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    router.push(`${url}/${inputRef.current.value.trim()}`);
   };
 
   return (
@@ -35,7 +40,9 @@ const SearchBox = ({
         }}
       >
         <SearchIcon style={{ fill: "#7C8689" }} />
-        <input onChange={onChange} placeholder="Search Indicators" />
+        <form onSubmit={onSubmit}>
+          <input ref={inputRef} placeholder="Search Indicators" />
+        </form>
       </div>
       {before || children}
     </div>

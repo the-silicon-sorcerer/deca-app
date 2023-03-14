@@ -55,7 +55,7 @@ const HomePage = async () => {
           <IconBox Icon={MenuIcon} size="40px" className={style.menu} />
         </div>
         <div className={style.searchContainer}>
-          <SearchBox shadow>
+          <SearchBox url="/marketing/search" shadow>
             <IconBox
               Icon={FilterIconAlt}
               size="40px"

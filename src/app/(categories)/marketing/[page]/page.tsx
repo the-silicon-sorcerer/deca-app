@@ -51,11 +51,12 @@ const MarketingPage = async ({ params }: { params: { page: string } }) => {
 
   return (
     <InfoDisplay
+      searchUrl="marketing/search"
       indicators={indicators}
       totPages={totPages}
       page={Number(params.page)}
       color="var(--marketingRed)"
-      category="MARKETING"
+      search
     />
   );
 };

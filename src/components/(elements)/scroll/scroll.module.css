@@ -8,6 +8,5 @@
   width: 100%;
   color: white;
   gap: 10px;
-
-  transition: bottom 1s;
+  transition: bottom 0.25s;
 }
