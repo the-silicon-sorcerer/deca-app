@@ -20,6 +20,7 @@ const MarketingSearchPage = async ({
         },
       },
     },
+    take: 50,
   });
 
   if (indicators.length === 0) {
