@@ -17,7 +17,8 @@ const PaginationFooter = ({
   path,
 }: PaginationFooterProps) => {
   const generatePagination = (page: number) => {
-    const gen = [];
+    const gen: JSX.Element[] = [];
+    if (totPages <= 1) return gen;
     if (totPages >= 7) {
       for (
         let i =
