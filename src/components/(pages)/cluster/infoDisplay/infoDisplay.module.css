@@ -1,0 +1,9 @@
+.indicatorContainer > * {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 700px) {
+  .indicatorContainer {
+    padding: 0px 200px;
+  }
+}

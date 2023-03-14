@@ -8,6 +8,6 @@
   width: 100%;
   color: white;
   gap: 10px;
-  background-color: var(--marketingRed);
+
   transition: bottom 1s;
 }

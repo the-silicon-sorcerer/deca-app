@@ -10,8 +10,8 @@ interface AreaBoxProps {
 const AreaBox = ({ area, indicators }: AreaBoxProps) => {
   const generateArea = (area: string) => {
     let name = area.split(/Area:/)[1];
-    if (name && name?.replace(/\s/g, "").length >= 21) {
-      name = name?.slice(0, 21).concat("...");
+    if (name && name?.replace(/\s/g, "").length >= 19) {
+      name = name?.slice(0, 19).concat("...");
     }
     return name;
   };

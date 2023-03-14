@@ -87,7 +87,7 @@ const HomePage = async () => {
               Icon: TourismIcon,
             },
             {
-              link: "/marketing",
+              link: "/marketing/1",
               color: "var(--marketingRed)",
               Icon: MarketingIcon,
             },
