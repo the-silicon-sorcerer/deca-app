@@ -24,7 +24,7 @@ export const seedRouter = createTRPCRouter({
     .mutation(async ({ ctx, input }) => {
       const generateCategories = (arr: Category[]) => {
         const gen = [];
-        for (let cat of arr) {
+        for (const cat of arr) {
           gen.push({ id: cat });
         }
         return gen;
@@ -41,7 +41,6 @@ export const seedRouter = createTRPCRouter({
         },
       });
       if (!mutation) throw new TRPCError({ code: "BAD_REQUEST" });
-      console.log(mutation);
       return mutation;
     }),
   seedCategories: publicProcedure
@@ -55,7 +54,7 @@ export const seedRouter = createTRPCRouter({
       ])
     )
     .mutation(async ({ ctx, input }) => {
-      const mutation = ctx.prisma.category.create({
+      const mutation = await ctx.prisma.category.create({
         data: {
           id: input,
           name: input,

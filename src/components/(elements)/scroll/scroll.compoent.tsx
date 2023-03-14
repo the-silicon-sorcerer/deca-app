@@ -29,7 +29,7 @@ const Scroll = ({ color }: ScrollProps) => {
 
   let prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset;
+    const currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos && currentScrollPos > 0) {
       hide(false);
     } else {

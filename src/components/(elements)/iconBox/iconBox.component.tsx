@@ -24,7 +24,7 @@ const IconBox = ({
     return (
       <Link href={link}>
         <div
-          className={`${style.container} ${className}`}
+          className={`${style.container!} ${className!}`}
           style={{
             width: size,
             backgroundColor: background ? background : undefined,
@@ -40,7 +40,7 @@ const IconBox = ({
 
   return (
     <div
-      className={`${style.container} ${className}`}
+      className={`${style.container!} ${className!}`}
       style={{
         width: size,
         backgroundColor: background ? background : undefined,

@@ -26,7 +26,7 @@ const PaginationFooter = ({
       i++
     ) {
       gen.push(
-        <Link href={`/${path && path[1]}/${i}`} key={Math.random()}>
+        <Link href={`/${path! && path[1]}/${i}`} key={Math.random()}>
           <div
             className={style.paginationBox}
             style={{

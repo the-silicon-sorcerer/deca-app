@@ -31,7 +31,7 @@ const HomePage = async () => {
     })[]
   ) => {
     const gen = [];
-    for (let area of areas) {
+    for (const area of areas) {
       gen.push(
         <AreaBox
           key={area.name}

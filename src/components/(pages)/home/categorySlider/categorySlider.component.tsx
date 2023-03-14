@@ -16,7 +16,7 @@ interface CategorySliderProps {
 const CategorySlider = ({ categories }: CategorySliderProps) => {
   const generateCategories = (arr: CategoryObj[]) => {
     const gen = [];
-    for (let obj of arr) {
+    for (const obj of arr) {
       gen.push(
         <Link
           href={obj.link}

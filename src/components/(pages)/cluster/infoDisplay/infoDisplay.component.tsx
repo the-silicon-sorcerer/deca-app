@@ -11,7 +11,7 @@ import PaginationFooter from "../../../(elements)/pageinationFooter/paginationFo
 import { useEffect, useState } from "react";
 import { trpc } from "../../../../utils/trpcProvider";
 import { Category } from "../../../../types/category";
-import { IndicatorData } from "@prisma/client";
+import { wait } from "../../../../utils/wait";
 
 interface InfoDisplayProps {
   indicators: CategoryIndicators;
@@ -29,7 +29,7 @@ const InfoDisplay = ({
   category,
 }: InfoDisplayProps) => {
   const [searchState, setSearch] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [filtered, setFiltered] = useState<JSX.Element[]>([] as JSX.Element[]);
   const categoryData = trpc.category.getCategory.useQuery({
     category: category,
   });
@@ -37,11 +37,13 @@ const InfoDisplay = ({
   useEffect(() => {
     if (typeof window !== "undefined")
       window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+    if (categoryData.data && searchState.replace(/\s/g, ""))
+      generateFiltered(categoryData.data);
+  }, [searchState]);
 
   const generateIndicators = (indicators: CategoryIndicators) => {
     const gen = [];
-    for (let indicator of indicators) {
+    for (const indicator of indicators) {
       gen.push(<IndicatorBox data={indicator} key={Math.random()} />);
     }
     return gen;
@@ -49,17 +51,34 @@ const InfoDisplay = ({
 
   categoryData.data;
 
-  const generateFiltered = (data: CategoryIndicators | undefined) => {
+  // const generateFiltered = (data: CategoryIndicators | undefined) => {
+  //   const gen = [];
+  //   if (data) {
+  //     for (let obj of data) {
+  //       if (obj.indicator.includes(searchState)) {
+  //         gen.push(<IndicatorBox data={obj} key={Math.random()} />);
+  //       }
+  //     }
+  //   }
+
+  //   return gen;
+  // };
+
+  const generateFiltered = (data: CategoryIndicators) => {
+    const chunkSize = 10;
     const gen = [];
-    if (data) {
-      for (let obj of data) {
-        if (obj.indicator.includes(searchState)) {
+    for (let i = 0; i < data.length; i += chunkSize) {
+      const chunk = data.slice(i, i + chunkSize);
+      for (const obj of chunk) {
+        if (
+          obj.indicator.toLowerCase().includes(searchState.toLocaleLowerCase())
+        ) {
           gen.push(<IndicatorBox data={obj} key={Math.random()} />);
         }
       }
+      if (gen.length > 10) break;
     }
-
-    return gen;
+    setFiltered(gen);
   };
 
   return (
@@ -69,7 +88,7 @@ const InfoDisplay = ({
       </SearchBox>
 
       {searchState.replace(/\s/g, "") ? (
-        <>{generateFiltered(categoryData.data)}</>
+        <>{filtered}</>
       ) : (
         <PaginationFooter page={page} color={color} totPages={totPages}>
           <div className={style.indicatorContainer}>
