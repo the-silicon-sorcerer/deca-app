@@ -4,6 +4,14 @@
   padding: 0px 20px;
 }
 
+.paginationContainerSmall {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
 .paginationBox {
   display: grid;
   place-items: center;
