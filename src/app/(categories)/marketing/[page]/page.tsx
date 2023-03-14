@@ -10,7 +10,7 @@ export async function generateStaticParams() {
       },
     })
     .then((data) => {
-      return Math.ceil(data.length / 50);
+      return Math.ceil(data.length / 25);
     });
 
   const arr = [];
@@ -45,13 +45,13 @@ const MarketingPage = async ({ params }: { params: { page: string } }) => {
         },
       },
     },
-    skip: (Number(params.page) - 1) * 50,
-    take: 50,
+    skip: (Number(params.page) - 1) * 25,
+    take: 25,
   });
 
   return (
     <InfoDisplay
-      searchUrl="marketing/search"
+      baseUrl="marketing"
       indicators={indicators}
       totPages={totPages}
       page={Number(params.page)}

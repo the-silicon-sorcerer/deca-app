@@ -16,7 +16,7 @@ interface InfoDisplayProps {
   page: number;
   totPages?: number;
   search?: boolean;
-  searchUrl?: string;
+  baseUrl: string;
 }
 
 const InfoDisplay = ({
@@ -24,7 +24,7 @@ const InfoDisplay = ({
   page,
   color,
   totPages,
-  searchUrl,
+  baseUrl,
   search,
 }: InfoDisplayProps) => {
   useEffect(() => {
@@ -43,12 +43,17 @@ const InfoDisplay = ({
   return (
     <>
       {search && (
-        <SearchBox url={searchUrl} before outline>
+        <SearchBox url={baseUrl} before outline>
           <IconBox Icon={BackIcon} size="40px" outline link="/" />
         </SearchBox>
       )}
       {totPages ? (
-        <PaginationFooter page={page} color={color} totPages={totPages}>
+        <PaginationFooter
+          path={baseUrl}
+          page={page}
+          color={color}
+          totPages={totPages}
+        >
           <div className={style.indicatorContainer}>
             {generateIndicators(indicators)}
           </div>

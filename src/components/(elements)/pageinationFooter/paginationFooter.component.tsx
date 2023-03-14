@@ -7,6 +7,7 @@ interface PaginationFooterProps {
   totPages: number;
   color: string;
   children: React.ReactNode;
+  path: string;
 }
 
 const PaginationFooter = ({
@@ -14,9 +15,8 @@ const PaginationFooter = ({
   color,
   children,
   totPages,
+  path,
 }: PaginationFooterProps) => {
-  const path = usePathname()?.split("/");
-
   const generatePagination = (page: number) => {
     const gen = [];
     for (
@@ -26,7 +26,7 @@ const PaginationFooter = ({
       i++
     ) {
       gen.push(
-        <Link href={`/${path! && path[1]}/${i}`} key={Math.random()}>
+        <Link href={`/${path}/${i}`} key={Math.random()}>
           <div
             className={style.paginationBox}
             style={{
