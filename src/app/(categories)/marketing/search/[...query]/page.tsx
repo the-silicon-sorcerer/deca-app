@@ -19,7 +19,7 @@ const MarketingSearchPage = async ({
       },
     })
     .then((data) => {
-      return Math.ceil(data.length / 50);
+      return Math.ceil(data.length / 10);
     });
 
   const indicators = await prisma.indicatorData.findMany({
@@ -36,8 +36,8 @@ const MarketingSearchPage = async ({
         },
       },
     },
-    skip: (Number(params.query[1]) - 1) * 50,
-    take: 50,
+    skip: (Number(params.query[1]) - 1) * 10,
+    take: 10,
   });
 
   if (indicators.length === 0) {
