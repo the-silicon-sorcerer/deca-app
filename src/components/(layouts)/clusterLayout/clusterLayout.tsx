@@ -13,6 +13,7 @@ interface ClusterLayoutProps {
   title: string;
   color: string;
   children: React.ReactNode;
+  Icon: any;
 }
 
 const ClusterLayout = ({
@@ -20,12 +21,13 @@ const ClusterLayout = ({
   title,
   color,
   offset,
+  Icon,
 }: ClusterLayoutProps) => {
   return (
     <div className={style.pageContainer}>
       <div className={style.header} style={{ backgroundColor: color }}>
         <p className="body-B-Large">{title}</p>
-        <MarketingIcon style={{ left: offset }} />
+        <Icon style={{ left: offset }} />
       </div>
       <Buffer height="76px" />
       {children}

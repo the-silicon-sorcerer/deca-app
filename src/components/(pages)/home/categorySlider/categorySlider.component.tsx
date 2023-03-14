@@ -20,7 +20,9 @@ const CategorySlider = ({ categories }: CategorySliderProps) => {
       gen.push(
         <Link
           href={obj.link}
-          style={{ marginLeft: obj.link === "/managment" ? "24px" : undefined }}
+          style={{
+            marginLeft: obj.link === "/management/1" ? "24px" : undefined,
+          }}
           key={Math.random()}
         >
           <div className={style.iconContainer}>

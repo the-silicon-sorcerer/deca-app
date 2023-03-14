@@ -67,8 +67,8 @@ const HomePage = async () => {
         <CategorySlider
           categories={[
             {
-              link: "/managment",
-              color: "var(--managmentYellow)",
+              link: "/management/1",
+              color: "var(--managementYellow)",
               Icon: ManagementIcon,
             },
             {

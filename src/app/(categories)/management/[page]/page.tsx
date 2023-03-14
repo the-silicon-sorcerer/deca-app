@@ -20,17 +20,17 @@ export async function generateStaticParams() {
   return arr;
 }
 
-const MarketingPage = async ({ params }: { params: { page: string } }) => {
+const ManagementPage = async ({ params }: { params: { page: string } }) => {
   return (
     // @ts-expect-error server component
     <IndicatorPage
       chunkSize={50}
       page={params.page}
-      color="var(--marketingRed)"
-      searchUrl="marketing/search"
-      baseUrl="marketing"
+      color="var(--managementYellow)"
+      searchUrl="management/search"
+      baseUrl="management"
     />
   );
 };
 
-export default MarketingPage;
+export default ManagementPage;

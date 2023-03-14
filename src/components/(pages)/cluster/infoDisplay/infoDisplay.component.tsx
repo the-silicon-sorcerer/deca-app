@@ -16,7 +16,6 @@ interface InfoDisplayProps {
   color: string;
   page: number;
   totPages: number;
-  search?: boolean;
   baseUrl: string;
   searchUrl: string;
   results?: string;
@@ -28,14 +27,10 @@ const InfoDisplay = ({
   color,
   totPages,
   baseUrl,
-  search,
+
   results,
   searchUrl,
 }: InfoDisplayProps) => {
-  const pathname = usePathname();
-
-  console.log(pathname);
-
   useEffect(() => {
     if (typeof window !== "undefined")
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -54,11 +49,11 @@ const InfoDisplay = ({
       {results && (
         <p className="body-Small">{`Search results for “${results}” : `}</p>
       )}
-      {search && (
-        <SearchBox url={searchUrl} before outline>
-          <IconBox Icon={BackIcon} size="40px" outline link="/" />
-        </SearchBox>
-      )}
+
+      <SearchBox url={searchUrl} before outline>
+        <IconBox Icon={BackIcon} size="40px" outline link="/" />
+      </SearchBox>
+
       <PaginationFooter
         path={baseUrl}
         page={page}

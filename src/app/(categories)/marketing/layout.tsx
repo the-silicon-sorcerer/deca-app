@@ -1,5 +1,7 @@
 import style from "./layout.module.css";
 
+import { MarketingIcon } from "../../../components/(svgs)";
+
 import ClusterLayout from "../../../components/(layouts)/clusterLayout/clusterLayout";
 
 const MarketingLayout = ({ children }: { children: React.ReactNode }) => {
@@ -8,6 +10,7 @@ const MarketingLayout = ({ children }: { children: React.ReactNode }) => {
       title="MARKETING CAREER CLUSTER"
       color="var(--marketingRed)"
       offset="50px"
+      Icon={MarketingIcon}
     >
       {children}
     </ClusterLayout>
