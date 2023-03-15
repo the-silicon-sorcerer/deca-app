@@ -27,7 +27,7 @@ const PaginationFooter = ({
         i++
       ) {
         gen.push(
-          <Link href={`/${path}/${i}`} key={Math.random()}>
+          <Link href={`/${path}/${i}`} key={Math.random()} prefetch>
             <div
               className={style.paginationBox}
               style={{
@@ -44,7 +44,7 @@ const PaginationFooter = ({
     } else {
       for (let i = 1; i <= totPages; i++) {
         gen.push(
-          <Link href={`/${path}/${i}`} key={Math.random()}>
+          <Link href={`/${path}/${i}`} key={Math.random()} prefetch>
             <div
               className={style.paginationBox}
               style={{

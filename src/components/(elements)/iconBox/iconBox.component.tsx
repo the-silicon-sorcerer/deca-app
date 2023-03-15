@@ -22,7 +22,7 @@ const IconBox = ({
 }: IconBoxProps) => {
   if (link) {
     return (
-      <Link href={link}>
+      <Link href={link} prefetch>
         <div
           className={`${style.container!} ${className!}`}
           style={{
