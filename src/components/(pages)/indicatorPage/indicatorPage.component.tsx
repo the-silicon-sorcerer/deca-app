@@ -13,6 +13,7 @@ interface IndicatorPageProps {
   results?: string;
   category?: Category;
   area?: string;
+  all?: boolean;
 }
 
 const IndicatorPage = async ({
@@ -25,14 +26,21 @@ const IndicatorPage = async ({
   results,
   category,
   area,
+  all,
 }: IndicatorPageProps) => {
-  const param = {
-    indicator: {
-      contains: query ? query.replace(/%20/g, " ") : " ",
-    },
-    ...(area && { areaId: area }),
-    ...(category && { Categories: { some: { name: category } } }),
-  };
+  const param = all
+    ? {
+        indicator: {
+          contains: query ? query.replace(/%20/g, " ") : " ",
+        },
+      }
+    : {
+        indicator: {
+          contains: query ? query.replace(/%20/g, " ") : " ",
+        },
+        ...(area && { areaId: area }),
+        ...(category && { Categories: { some: { name: category } } }),
+      };
 
   if (!Number(page) || !param) notFound();
 
@@ -68,50 +76,6 @@ const IndicatorPage = async ({
       results={results ? results : undefined}
     />
   );
-
-  //   const totPages = await prisma.indicatorData
-  //     .findMany({
-  //       where: {
-  //         indicator: {
-  //           contains: query ? query.replace(/%20/g, " ") : " ",
-  //         },
-  //         Categories: { some: { name: category } },
-  //       },
-  //     })
-  //     .then((data) => {
-  //       return Math.ceil(data.length / chunkSize);
-  //     });
-
-  //   const indicators = await prisma.indicatorData.findMany({
-  //     where: {
-  //       indicator: {
-  //         contains: query ? query.replace(/%20/g, " ") : " ",
-  //       },
-  //       Categories: { some: { name: "MARKETING" } },
-  //     },
-  //     include: {
-  //       area: {
-  //         include: {
-  //           IndicatorData: true,
-  //         },
-  //       },
-  //     },
-  //     skip: (Number(page) - 1) * chunkSize,
-  //     take: chunkSize,
-  //   });
-
-  //   return (
-  //     <InfoDisplay
-  //       baseUrl={baseUrl}
-  //       searchUrl={searchUrl}
-  //       indicators={indicators}
-  //       totPages={totPages}
-  //       page={Number(page)}
-  //       color={color}
-  //       results={results ? results : undefined}
-  //     />
-  //   );
-  //
 };
 
 export default IndicatorPage;
