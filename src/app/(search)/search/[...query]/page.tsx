@@ -10,7 +10,7 @@ const SearchPage = ({ params }: { params: { query: string[] } }) => {
       query={params.query[0]}
       page={params.query[1]!}
       color="var(--darkBlue)"
-      searchUrl={`area/${url}/search`}
+      searchUrl={`/search`}
       baseUrl={`search/${url}`}
       all
     />
