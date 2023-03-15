@@ -72,17 +72,17 @@ const HomePage = async () => {
               Icon: ManagementIcon,
             },
             {
-              link: "/entrepreneur",
+              link: "/entrepreneur/1",
               color: "var(--entrepreneurGrey)",
               Icon: EntrepreneurIcon,
             },
             {
-              link: "/finance",
+              link: "/finance/1",
               color: "var(--financeGreen)",
               Icon: FinanceIcon,
             },
             {
-              link: "/hospitality",
+              link: "/hospitality/1",
               color: "var(--hospitalityBlue)",
               Icon: TourismIcon,
             },

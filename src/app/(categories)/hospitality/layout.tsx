@@ -1,13 +1,13 @@
 import ClusterLayout from "../../../components/(layouts)/clusterLayout/clusterLayout";
-import { ManagementIcon } from "../../../components/(svgs)";
+import { TourismIcon } from "../../../components/(svgs)";
 
 const ManagementLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ClusterLayout
-      title="MANAGEMENT CAREER CLUSTER"
-      color="var(--managementYellow)"
-      offset="60px"
-      Icon={ManagementIcon}
+      title="HOSPITALITY CAREER CLUSTER"
+      color="var(--hospitalityBlue)"
+      offset="65px"
+      Icon={TourismIcon}
     >
       {children}
     </ClusterLayout>
