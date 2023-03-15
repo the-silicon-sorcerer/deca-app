@@ -21,6 +21,7 @@ const MarketingSearchPage = async ({
       color="var(--managementYellow)"
       searchUrl="management/search"
       baseUrl={`management/search/${query}`}
+      category="MANAGMENT"
     />
   );
 };

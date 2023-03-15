@@ -29,6 +29,7 @@ const MarketingPage = async ({ params }: { params: { page: string } }) => {
       color="var(--marketingRed)"
       searchUrl="marketing/search"
       baseUrl="marketing"
+      category="MARKETING"
     />
   );
 };

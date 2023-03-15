@@ -29,6 +29,7 @@ const ManagementPage = async ({ params }: { params: { page: string } }) => {
       color="var(--entrepreneurGrey)"
       searchUrl="entrepreneur/search"
       baseUrl="entrepreneur"
+      category="ENTREPRENEUR"
     />
   );
 };

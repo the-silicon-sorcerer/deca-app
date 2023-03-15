@@ -29,6 +29,7 @@ const ManagementPage = async ({ params }: { params: { page: string } }) => {
       color="var(--hospitalityBlue)"
       searchUrl="hospitality/search"
       baseUrl="hospitality"
+      category="HOSPITIALITY"
     />
   );
 };

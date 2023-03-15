@@ -29,6 +29,7 @@ const ManagementPage = async ({ params }: { params: { page: string } }) => {
       color="var(--managementYellow)"
       searchUrl="management/search"
       baseUrl="management"
+      category="MANAGMENT"
     />
   );
 };

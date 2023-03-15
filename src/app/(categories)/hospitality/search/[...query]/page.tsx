@@ -17,6 +17,7 @@ const MarketingSearchPage = async ({
       color="var(--hospitalityBlue)"
       searchUrl="hospitality/search"
       baseUrl={`hospitality/search/${query}`}
+      category="HOSPITIALITY"
     />
   );
 };

@@ -1,6 +1,7 @@
 import { prisma } from "../../../server/db";
 import { notFound } from "next/navigation";
 import InfoDisplay from "../cluster/infoDisplay/infoDisplay.component";
+import { Category } from "../../../types/category";
 
 interface IndicatorPageProps {
   page: string;
@@ -10,6 +11,7 @@ interface IndicatorPageProps {
   query?: string;
   chunkSize: number;
   results?: string;
+  category: Category;
 }
 
 const IndicatorPage = async ({
@@ -20,6 +22,7 @@ const IndicatorPage = async ({
   query,
   chunkSize,
   results,
+  category,
 }: IndicatorPageProps) => {
   if (!Number(page)) notFound();
 
@@ -29,7 +32,7 @@ const IndicatorPage = async ({
         indicator: {
           contains: query ? query.replace(/%20/g, " ") : " ",
         },
-        Categories: { some: { name: "MARKETING" } },
+        Categories: { some: { name: category } },
       },
     })
     .then((data) => {

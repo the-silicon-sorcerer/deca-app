@@ -17,6 +17,7 @@ const MarketingSearchPage = async ({
       color="var(--entrepreneurGrey)"
       searchUrl="entrepreneur/search"
       baseUrl={`entrepreneur/search/${query}`}
+      category="ENTREPRENEUR"
     />
   );
 };

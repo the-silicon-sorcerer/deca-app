@@ -21,6 +21,7 @@ const MarketingSearchPage = async ({
       color="var(--financeGreen)"
       searchUrl="finance/search"
       baseUrl={`finance/search/${query}`}
+      category="FINANCE"
     />
   );
 };
