@@ -17,6 +17,7 @@ import {
 } from "../components/(svgs)";
 
 import style from "./page.module.css";
+import Link from "next/link";
 
 const HomePage = async () => {
   const areas = await prisma.area.findMany({

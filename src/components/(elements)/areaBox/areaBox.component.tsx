@@ -1,4 +1,6 @@
 import { ArrowIconSmall } from "../../(svgs)";
+import Link from "next/link";
+import { generateAreaName } from "../../../utils/generateAreaName";
 
 import style from "./areaBox.module.css";
 
@@ -8,7 +10,7 @@ interface AreaBoxProps {
 }
 
 const AreaBox = ({ area, indicators }: AreaBoxProps) => {
-  const generateArea = (area: string) => {
+  const generateAreaName = (area: string) => {
     let name = area.split(/Area:/)[1];
     if (name && name?.replace(/\s/g, "").length >= 19) {
       name = name?.slice(0, 19).concat("...");
@@ -17,13 +19,15 @@ const AreaBox = ({ area, indicators }: AreaBoxProps) => {
   };
 
   return (
-    <div className={style.container}>
-      <div className={style.text}>
-        <p className="body-B-Medium">{`${generateArea(area)}`}</p>
-        <p className="body-Small">{`(${String(indicators)})`}</p>
+    <Link href={`/area/${area}/1`}>
+      <div className={style.container}>
+        <div className={style.text}>
+          <p className="body-B-Medium">{`${generateAreaName(area)}`}</p>
+          <p className="body-Small">{`(${String(indicators)})`}</p>
+        </div>
+        <ArrowIconSmall />
       </div>
-      <ArrowIconSmall />
-    </div>
+    </Link>
   );
 };
 

@@ -11,7 +11,8 @@ interface IndicatorPageProps {
   query?: string;
   chunkSize: number;
   results?: string;
-  category: Category;
+  category?: Category;
+  area?: string;
 }
 
 const IndicatorPage = async ({
@@ -23,29 +24,28 @@ const IndicatorPage = async ({
   chunkSize,
   results,
   category,
+  area,
 }: IndicatorPageProps) => {
-  if (!Number(page)) notFound();
+  const param = {
+    indicator: {
+      contains: query ? query.replace(/%20/g, " ") : " ",
+    },
+    ...(area && { areaId: area }),
+    ...(category && { Categories: { some: { name: category } } }),
+  };
+
+  if (!Number(page) || !param) notFound();
 
   const totPages = await prisma.indicatorData
     .findMany({
-      where: {
-        indicator: {
-          contains: query ? query.replace(/%20/g, " ") : " ",
-        },
-        Categories: { some: { name: category } },
-      },
+      where: param,
     })
     .then((data) => {
       return Math.ceil(data.length / chunkSize);
     });
 
   const indicators = await prisma.indicatorData.findMany({
-    where: {
-      indicator: {
-        contains: query ? query.replace(/%20/g, " ") : " ",
-      },
-      Categories: { some: { name: "MARKETING" } },
-    },
+    where: param,
     include: {
       area: {
         include: {
@@ -68,6 +68,50 @@ const IndicatorPage = async ({
       results={results ? results : undefined}
     />
   );
+
+  //   const totPages = await prisma.indicatorData
+  //     .findMany({
+  //       where: {
+  //         indicator: {
+  //           contains: query ? query.replace(/%20/g, " ") : " ",
+  //         },
+  //         Categories: { some: { name: category } },
+  //       },
+  //     })
+  //     .then((data) => {
+  //       return Math.ceil(data.length / chunkSize);
+  //     });
+
+  //   const indicators = await prisma.indicatorData.findMany({
+  //     where: {
+  //       indicator: {
+  //         contains: query ? query.replace(/%20/g, " ") : " ",
+  //       },
+  //       Categories: { some: { name: "MARKETING" } },
+  //     },
+  //     include: {
+  //       area: {
+  //         include: {
+  //           IndicatorData: true,
+  //         },
+  //       },
+  //     },
+  //     skip: (Number(page) - 1) * chunkSize,
+  //     take: chunkSize,
+  //   });
+
+  //   return (
+  //     <InfoDisplay
+  //       baseUrl={baseUrl}
+  //       searchUrl={searchUrl}
+  //       indicators={indicators}
+  //       totPages={totPages}
+  //       page={Number(page)}
+  //       color={color}
+  //       results={results ? results : undefined}
+  //     />
+  //   );
+  //
 };
 
 export default IndicatorPage;

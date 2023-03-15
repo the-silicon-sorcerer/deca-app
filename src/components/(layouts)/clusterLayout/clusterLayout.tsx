@@ -9,11 +9,11 @@ import { BackIcon } from "../../(svgs)";
 import Scroll from "../../(elements)/scroll/scroll.compoent";
 
 interface ClusterLayoutProps {
-  offset: string;
+  offset?: string;
   title: string;
   color: string;
   children: React.ReactNode;
-  Icon: any;
+  Icon?: any;
 }
 
 const ClusterLayout = ({
@@ -27,7 +27,7 @@ const ClusterLayout = ({
     <div className={style.pageContainer}>
       <div className={style.header} style={{ backgroundColor: color }}>
         <p className="body-B-Large">{title}</p>
-        <Icon style={{ left: offset }} />
+        {Icon && <Icon style={{ left: offset }} />}
       </div>
       <Buffer height="76px" />
       {children}

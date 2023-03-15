@@ -11,6 +11,7 @@
   display: flex;
   align-items: flex-end;
   gap: 10px;
+  color: black;
 }
 
 .text p:nth-child(2) {

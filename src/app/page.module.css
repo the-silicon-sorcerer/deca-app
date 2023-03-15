@@ -54,6 +54,7 @@
   margin-bottom: 20px;
 }
 
-.boxContainer > * {
+.boxContainer > a > * {
+  color: black;
   margin-bottom: 10px;
 }
