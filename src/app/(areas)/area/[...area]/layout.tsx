@@ -14,7 +14,7 @@ const AreaLayout = ({
 
   return (
     <ClusterLayout
-      title={title?.toUpperCase()!}
+      title={title ? title?.toUpperCase() : ""}
       color="var(--entrepreneurGrey)"
     >
       {children}
