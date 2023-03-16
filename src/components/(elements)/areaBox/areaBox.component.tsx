@@ -1,6 +1,5 @@
 import { ArrowIconSmall } from "../../(svgs)";
 import Link from "next/link";
-import { generateAreaName } from "../../../utils/generateAreaName";
 
 import style from "./areaBox.module.css";
 
@@ -19,7 +18,7 @@ const AreaBox = ({ area, indicators }: AreaBoxProps) => {
   };
 
   return (
-    <Link href={`/area/${area}/1`} prefetch>
+    <Link href={`/area/${area}/1`}>
       <div className={style.container}>
         <div className={style.text}>
           <p className="body-B-Medium">{`${generateAreaName(area)}`}</p>

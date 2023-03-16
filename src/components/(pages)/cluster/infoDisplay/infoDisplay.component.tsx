@@ -19,6 +19,8 @@ interface InfoDisplayProps {
   baseUrl: string;
   searchUrl: string;
   results?: string;
+  noResults?: boolean;
+  tot: number;
 }
 
 const InfoDisplay = ({
@@ -27,9 +29,10 @@ const InfoDisplay = ({
   color,
   totPages,
   baseUrl,
-
+  noResults,
   results,
   searchUrl,
+  tot,
 }: InfoDisplayProps) => {
   useEffect(() => {
     if (typeof window !== "undefined")
@@ -47,9 +50,12 @@ const InfoDisplay = ({
   return (
     <>
       {results && (
-        <p className="body-Small">{`Search results for “${results}” : `}</p>
+        <p className="body-Small">
+          {noResults
+            ? `No results found for "${results}" :(`
+            : `(${tot}) Search results for “${results}” : `}
+        </p>
       )}
-
       <SearchBox url={searchUrl} before outline>
         <IconBox Icon={BackIcon} size="40px" outline link="/" />
       </SearchBox>

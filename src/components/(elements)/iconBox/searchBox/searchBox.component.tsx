@@ -1,10 +1,11 @@
 "use client";
 
 import { SearchIcon } from "../../../(svgs)";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import style from "./searchBox.module.css";
 import { useRouter } from "next/navigation";
+import LoadingSpinner from "../../loadingSpinner/loadingSpinner.component";
 
 interface SearchBoxProps {
   children: React.ReactNode;
@@ -24,9 +25,17 @@ const SearchBox = ({
 }: SearchBoxProps) => {
   const router = useRouter();
   const inputRef = useRef({} as HTMLInputElement);
+  const [search, setSearch] = useState(false);
+
+  //failsafe if search is the same
+
+  setTimeout(() => {
+    setSearch(false);
+  }, 5000);
 
   const onSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSearch(true);
     router.push(`${url}/${inputRef.current.value.trim()}/1`);
   };
 
@@ -46,6 +55,11 @@ const SearchBox = ({
         </form>
       </div>
       {before || children}
+      {search && (
+        <div className={style.spinner}>
+          <LoadingSpinner />
+        </div>
+      )}
     </div>
   );
 };

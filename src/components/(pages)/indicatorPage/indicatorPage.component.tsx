@@ -44,13 +44,15 @@ const IndicatorPage = async ({
 
   if (!Number(page) || !param) notFound();
 
-  const totPages = await prisma.indicatorData
+  const tot = await prisma.indicatorData
     .findMany({
       where: param,
     })
     .then((data) => {
-      return Math.ceil(data.length / chunkSize);
+      return data.length;
     });
+
+  const totPages = Math.ceil(tot / chunkSize);
 
   const indicators = await prisma.indicatorData.findMany({
     where: param,
@@ -74,6 +76,8 @@ const IndicatorPage = async ({
       page={Number(page)}
       color={color}
       results={results ? results : undefined}
+      noResults={!indicators[0]}
+      tot={tot}
     />
   );
 };

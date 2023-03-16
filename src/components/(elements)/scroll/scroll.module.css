@@ -9,4 +9,5 @@
   color: white;
   gap: 10px;
   transition: bottom 0.25s;
+  z-index: 1;
 }

@@ -24,7 +24,6 @@ const CategorySlider = ({ categories }: CategorySliderProps) => {
             marginLeft: obj.link === "/management/1" ? "24px" : undefined,
           }}
           key={Math.random()}
-          prefetch
         >
           <div className={style.iconContainer}>
             <IconBox
