@@ -1,9 +1,9 @@
 import IndicatorPage from "../../../../../components/(pages)/indicatorPage/indicatorPage.component";
-import { cookies } from "next/headers";
+
+export const dynamic = "force-dynamic";
 
 const AreaSearchPage = async ({ params }: { params: { query: string[] } }) => {
   // fixed prerending bug
-  const c = cookies();
 
   const area = params.query[0]!.replace(/%20/g, " ").replace(/%3A/g, ":");
   const query = params.query[1]!.replace(/%20/g, " ");
