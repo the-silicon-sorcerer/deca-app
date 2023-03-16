@@ -1,7 +1,5 @@
 import IndicatorPage from "../../../../../components/(pages)/indicatorPage/indicatorPage.component";
 
-export const dynamic = "force-dynamic";
-
 const AreaSearchPage = async ({ params }: { params: { query: string[] } }) => {
   // fixed prerending bug
 
