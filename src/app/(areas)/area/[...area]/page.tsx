@@ -9,7 +9,7 @@ const AreaPage = ({ params }: { params: { area: string[] } }) => {
       chunkSize={10}
       page={params.area[1]!}
       color="var(--entrepreneurGrey)"
-      searchUrl={`area/${url}/search`}
+      searchUrl={`area/search/${url}`}
       baseUrl={`area/${url}`}
       area={url}
     />
