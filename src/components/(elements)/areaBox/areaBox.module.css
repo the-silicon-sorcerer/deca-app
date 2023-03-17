@@ -17,3 +17,7 @@
 .text p:nth-child(2) {
   color: var(--darkBlue);
 }
+
+.container:active {
+  filter: brightness(90%);
+}

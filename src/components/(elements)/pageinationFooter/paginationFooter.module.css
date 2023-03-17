@@ -22,3 +22,7 @@
   aspect-ratio: 1/1;
   color: black;
 }
+
+.paginationBox:active {
+  filter: brightness(90%);
+}

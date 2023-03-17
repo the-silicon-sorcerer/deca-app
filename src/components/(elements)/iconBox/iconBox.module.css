@@ -5,3 +5,6 @@
   place-items: center;
   border-radius: var(--borderRadius);
 }
+.container:active {
+  filter: brightness(90%);
+}

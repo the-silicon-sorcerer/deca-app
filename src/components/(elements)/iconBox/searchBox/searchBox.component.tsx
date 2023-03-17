@@ -31,7 +31,7 @@ const SearchBox = ({
 
   setTimeout(() => {
     setSearch(false);
-  }, 5000);
+  }, 10000);
 
   const onSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
