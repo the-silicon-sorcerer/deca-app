@@ -7,6 +7,10 @@
   border: var(--border);
 }
 
+.container:hover {
+  filter: brightness(95%);
+}
+
 .text {
   display: flex;
   align-items: flex-end;

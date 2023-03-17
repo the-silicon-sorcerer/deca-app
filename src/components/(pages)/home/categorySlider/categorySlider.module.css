@@ -49,6 +49,14 @@
   color: white;
 }
 
+.desktopBox:hover {
+  filter: brightness(95%);
+}
+
+.desktopBox:active {
+  filter: brightness(85%);
+}
+
 @media (max-width: 700px) {
   .desktopPadding {
     display: none;
