@@ -99,7 +99,7 @@ const HomePage = async () => {
           ]}
         />
       </div>
-      <Buffer height="300px" />
+      <Buffer className={style.buffer} />
       <div className={style.areasContainer}>
         <div className={style.areasHeader}>
           <h5>Instructional Areas:</h5>

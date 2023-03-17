@@ -37,8 +37,35 @@ const CategorySlider = ({ categories }: CategorySliderProps) => {
     return gen;
   };
 
+  const genDesktopCategories = (arr: CategoryObj[]) => {
+    const gen = [];
+    for (const obj of arr) {
+      gen.push(
+        <Link href={obj.link} key={Math.random()}>
+          <div
+            className={style.desktopBox}
+            style={{ backgroundColor: obj.color }}
+          >
+            <obj.Icon style={{ scale: "0.6" }} />
+            <p className="body-B-ExtraSmall">
+              {captializeFirst(obj.link.split("/")[1])}
+            </p>
+          </div>
+        </Link>
+      );
+    }
+    return gen;
+  };
+
   return (
-    <div className={style.container}>{generateCategories(categories)}</div>
+    <>
+      <div className={style.container}>{generateCategories(categories)}</div>
+      <div className={style.desktopPadding}>
+        <div className={style.desktopContainer}>
+          {genDesktopCategories(categories)}
+        </div>
+      </div>
+    </>
   );
 };
 

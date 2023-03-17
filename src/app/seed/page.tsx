@@ -1,7 +1,7 @@
 "use client";
 
 import { trpc } from "../../utils/trpcProvider";
-import { data } from "../../../public/data/cleanestData";
+import { data } from "../../../public/data/cleanerData";
 import { wait } from "../../utils/wait";
 
 const Seed = () => {

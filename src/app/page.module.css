@@ -3,6 +3,9 @@
   background-color: white;
 }
 
+.buffer {
+  height: 300px;
+}
 .heroContainer {
   position: absolute;
   top: 0;
@@ -57,4 +60,37 @@
 .boxContainer > a > * {
   color: black;
   margin-bottom: 10px;
+}
+
+@media (min-width: 700px) {
+  .menu {
+    display: none;
+  }
+  .heroContainer {
+    height: 425px;
+  }
+  .headerContainer > p {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 800;
+    margin: 50px 0px;
+  }
+
+  .buffer {
+    height: 440px;
+  }
+
+  .boxContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .boxContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
 }

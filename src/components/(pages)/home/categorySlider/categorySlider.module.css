@@ -20,19 +20,43 @@
   color: black;
 }
 
-@media (min-width: 700px) {
-  .container {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+.desktopPadding {
+  padding: 0px 24px;
+}
+
+.desktopContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+  box-shadow: var(--iconShadow);
+  transform: translateY(53%);
+}
+
+.desktopContainer > * {
+  flex: 1;
+}
+
+.desktopBox {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .desktopPadding {
+    display: none;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   .container {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 75px;
+    display: none;
   }
 }

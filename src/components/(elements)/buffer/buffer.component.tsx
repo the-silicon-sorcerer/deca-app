@@ -1,9 +1,10 @@
 interface BufferProps {
-  height: string;
+  height?: string;
+  className?: string;
 }
 
-const Buffer = ({ height }: BufferProps) => {
-  return <div style={{ height: height }}></div>;
+const Buffer = ({ height, className }: BufferProps) => {
+  return <div className={`${className}`} style={{ height: height }}></div>;
 };
 
 export default Buffer;
