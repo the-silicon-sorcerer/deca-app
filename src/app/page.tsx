@@ -17,6 +17,7 @@ import {
 } from "../components/(svgs)";
 
 import style from "./page.module.css";
+import Alert from "../components/(elements)/alert/alert.component";
 
 const HomePage = async () => {
   const areas = await prisma.area.findMany({
@@ -52,16 +53,20 @@ const HomePage = async () => {
             <br />
             Performance Indicators
           </p>
-          <IconBox Icon={MenuIcon} size="40px" className={style.menu} />
+          <Alert message="Menu comming soon...">
+            <IconBox Icon={MenuIcon} size="40px" className={style.menu} />
+          </Alert>
         </div>
         <div className={style.searchContainer}>
           <SearchBox url="/search" shadow>
-            <IconBox
-              Icon={FilterIconAlt}
-              size="40px"
-              className={style.filter}
-              shadow
-            />
+            <Alert message="Filter comming soon...">
+              <IconBox
+                Icon={FilterIconAlt}
+                size="40px"
+                className={style.filter}
+                shadow
+              />
+            </Alert>
           </SearchBox>
         </div>
         <CategorySlider

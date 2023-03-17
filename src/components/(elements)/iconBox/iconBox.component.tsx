@@ -3,7 +3,7 @@ import style from "./iconBox.module.css";
 
 interface IconBoxProps {
   className?: string;
-  size: string;
+  size?: string;
   Icon: any;
   link?: string;
   background?: string;
@@ -31,6 +31,7 @@ const IconBox = ({
             border: outline ? "var(--border)" : undefined,
             boxShadow: shadow ? "var(--iconShadow)" : undefined,
           }}
+          id="iconBox"
         >
           <Icon />
         </div>

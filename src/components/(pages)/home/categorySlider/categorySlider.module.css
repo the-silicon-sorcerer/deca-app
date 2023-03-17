@@ -7,11 +7,9 @@
 .container::-webkit-scrollbar {
   display: none;
 }
-.iconContainer {
-  margin-right: 20px;
-}
 
 .iconContainer {
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -20,4 +18,21 @@
 
 .iconContainer > p {
   color: black;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+  }
 }

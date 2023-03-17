@@ -26,3 +26,11 @@
 .paginationBox:active {
   filter: brightness(90%);
 }
+
+@media (min-width: 700px) {
+  .paginationContainer {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}

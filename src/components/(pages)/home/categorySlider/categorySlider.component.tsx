@@ -26,12 +26,7 @@ const CategorySlider = ({ categories }: CategorySliderProps) => {
           key={Math.random()}
         >
           <div className={style.iconContainer}>
-            <IconBox
-              Icon={obj.Icon}
-              size="80px"
-              background={obj.color}
-              shadow
-            />
+            <IconBox Icon={obj.Icon} background={obj.color} shadow />
             <p className="body-Small">
               {captializeFirst(obj.link.split("/")[1])}
             </p>
