@@ -62,6 +62,12 @@
   margin-bottom: 10px;
 }
 
+@media (min-width: 200) {
+  .menu {
+    display: initial;
+  }
+}
+
 @media (min-width: 700px) {
   .menu {
     display: none;
@@ -88,6 +94,9 @@
 }
 
 @media (min-width: 1000px) {
+  .menu {
+    display: none;
+  }
   .boxContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
