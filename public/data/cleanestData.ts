@@ -2683,8 +2683,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Operations ",
-    indicator: "etc.) (OP:517) ",
-    text: '\n\nThe prompt "OP:517" is an abbreviation for "Open Problem 517," which is a mathematical problem that has yet to be solved. Open Problems are mathematical problems that have been identified by mathematicians as important and challenging, but have yet to be solved. They are often used to inspire research and progress in the field of mathematics.',
+    indicator:
+      "Comply with strategies for protecting business' digital assets (e.g., website, social media, email, etc) (OP:517) ",
+    text: "\n\nIt is crucial for businesses to comply with strategies for protecting their digital assets such as website, social media, email, and other digital platforms. By implementing security measures such as using strong passwords, regularly updating software, and backing up data, businesses can reduce the risk of data breaches and cyber attacks. Additionally, training employees on cybersecurity best practices and enforcing company policies can further enhance the overall security of the organizations digital assets. Taking these steps can help protect sensitive information, maintain customer trust, and prevent potentially costly data breaches.",
     category: ["MANAGMENT", "HOSPITIALITY"],
   },
   {
@@ -4218,8 +4219,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Professional Development ",
-    indicator: "(PD:258) ",
-    text: "\n\nPD:258 refers to page 258 of a particular document. It is likely a reference to a specific section or passage of text on that page.",
+    indicator:
+      "Identify continuing education courses or programs available to enhance management skills (PD:258) ",
+    text: "\n\nContinuing education courses and programs are widely available to help professionals enhance their management skills. Some options include online courses, workshops, seminars, and executive education programs offered by universities and business schools. Many of these programs cover a range of topics such as leadership, communication, project management, and strategic planning. Additionally, professional associations and industry organizations often offer continuing education opportunities, including conferences and webinars, that focus on management-related topics specific to their field. It is important for managers to stay up-to-date with the latest trends and best practices in their industry, and investing in continuing education can be a valuable way to do so.",
     category: ["MANAGMENT"],
   },
   {
@@ -4336,8 +4338,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Human Resources Management ",
-    indicator: "(HR:416) ",
-    text: "\n\nHR:416 is a reference to the U.S. House of Representatives Resolution 416, which was passed in 2019. The resolution expresses the sense of the House of Representatives that the United States should recognize the Armenian Genocide of 1915-1923. It also calls on the President and the Secretary of State to ensure that the foreign policy of the United States reflects appropriate understanding and sensitivity concerning issues related to human rights, ethnic cleansing, and genocide documented in the United States record as in the case of the Armenian Genocide.",
+    indicator:
+      " Describe planning techniques used in the hiring process (e.g., succession planning, forecasting, etc.) (HR:416) ",
+    text: "\n\nPlanning techniques are essential in the hiring process to ensure that organizations can attract, select and retain the right talent. Succession planning is one technique that involves identifying and developing potential candidates to fill key roles within the organization. This can help organizations maintain a pipeline of skilled and experienced employees who are prepared to take on leadership roles in the future. Forecasting is another technique used in the hiring process, which involves analyzing workforce data to predict future workforce needs, such as the demand for specific skills and job roles. Other planning techniques include job analysis and job design, which help organizations to clearly define the requirements and responsibilities of specific job roles, to ensure that they attract and select the most suitable candidates. By utilizing these planning techniques, organizations can optimize their hiring process and build a strong workforce that supports their goals and objectives.",
     category: ["MANAGMENT"],
   },
   {
@@ -4518,8 +4521,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Human Resources Management ",
-    indicator: "solutions (HR:454) ",
-    text: "\n\nSolutions is an ideal choice for businesses looking to improve their HR operations.",
+    indicator:
+      "Document employee issues (e.g., reasonable suspicion, harassment, attendance) and recommend solutions (HR:454) ",
+    text: "\n\nDocumenting employee issues is important for maintaining a record of incidents and actions taken, which can help organizations to address and resolve employee issues more effectively. Examples of employee issues that may require documentation include reasonable suspicion of drug or alcohol use, harassment or discrimination complaints, and attendance problems. Once an issue has been documented, organizations can then work to identify the root causes and recommend solutions. This may involve taking disciplinary action, providing training and development opportunities, or implementing policies and procedures to prevent future issues. By documenting employee issues and recommending solutions, organizations can improve employee performance and behavior, enhance workplace culture, and ensure compliance with legal and regulatory requirements.",
     category: ["MANAGMENT"],
   },
   {
@@ -5354,8 +5358,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Knowledge Management ",
-    indicator: "(KM:020) ",
-    text: "\n\nKM:020 stands for Knowledge Management:020. It is a term used to describe the process of collecting, organizing, and sharing knowledge within an organization. Knowledge Management:020 is a way to ensure that all employees have access to the same information and resources, and that the organization is able to make the most of its collective knowledge.",
+    indicator:
+      "Describe the relationship among knowledge management, innovation, and talent development (KM:020) ",
+    text: "\n\nThere is a close relationship among knowledge management, innovation, and talent development. Effective knowledge management involves capturing, organizing, and sharing knowledge and information within an organization, which can lead to innovation and improved performance. By making knowledge more accessible and transparent, organizations can foster a culture of creativity and encourage employees to share their ideas and insights. This, in turn, can lead to innovation and the development of new products, services, and processes. Talent development is also crucial in this relationship, as it involves identifying and nurturing the skills and abilities of employees to support innovation and knowledge management. By investing in employee training and development, organizations can build a more skilled and knowledgeable workforce that is better equipped to contribute to innovation and knowledge sharing. Overall, knowledge management, innovation, and talent development are interconnected and can help organizations to drive growth and success in today's fast-paced business environment.",
     category: ["MANAGMENT"],
   },
   {
@@ -5689,8 +5694,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Marketing-Information Management ",
-    indicator: "causal) (IM:284) ",
-    text: "\n\nCausal relationships are when one event or action causes another event or action to occur. For example, if a person throws a rock into a pond, the rock will cause ripples in the water. The action of throwing the rock is the cause, and the ripples in the water are the effect.",
+    indicator:
+      "Describe methods used to design marketing research studies (i.e., descriptive, exploratory, and causal) (IM:284) ",
+    text: "\n\nMarketing research studies can be designed using various methods, including descriptive, exploratory, and causal research. Descriptive research is used to describe and summarize market characteristics, while exploratory research is used to gain insights and understanding of consumer behaviors. Causal research investigates cause-and-effect relationships between variables. The appropriate research method depends on the research objectives and the type of information needed. Each method has its own strengths and weaknesses, and combining different methods can provide a more comprehensive understanding of the market and consumer behaviors. Ultimately, selecting the appropriate research method is critical to the success of any marketing research study.",
     category: ["MARKETING"],
   },
   {
@@ -8971,8 +8977,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Financial Analysis ",
-    indicator: "etc.) (FI:642) ",
-    text: "\n\nThe prompt FI:642 refers to the Financial Industry Regulatory Authority (FINRA) Rule 642, which requires broker-dealers to provide customers with certain information about their accounts. This rule requires that customers receive a written statement of their account activity, including the current balance, any transactions that have occurred, and any fees that have been charged. The rule also requires that customers receive a written statement of their account's margin requirements. This information is important for customers to understand their financial situation and make informed decisions about their investments.",
+    indicator:
+      "Discuss the nature of long-term assets (e.g., tangible assets, intangible assets, natural resources,etc.) (FI:642) ",
+    text: "\n\nLong-term assets are assets that are expected to provide economic benefits to a business for more than one year. These assets can be tangible, such as property, plant, and equipment, or intangible, such as patents, trademarks, and goodwill. Natural resources, such as oil reserves or timberlands, are also considered long-term assets. Tangible assets can be depreciated over time, while intangible assets may be amortized. Long-term assets are typically critical to a business's operations and can have a significant impact on its financial statements. They require careful management and maintenance to ensure their value is maximized over their useful life. Long-term assets can also be a source of financing for a business, as they can be used as collateral for loans. Understanding the nature of long-term assets is essential for businesses to make informed decisions regarding investment, financing, and overall asset management.",
     category: ["FINANCE"],
   },
   {
@@ -9037,8 +9044,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Financial Analysis ",
-    indicator: "revenue) (FI:717) ",
-    text: "\n\nRevenue is the total amount of money that a company earns from its business activities. It is the top line or gross income figure from which costs are subtracted to determine net income. Revenue is typically measured on a quarterly or annual basis and is an important metric for investors and analysts to assess the financial performance of a company.",
+    indicator:
+      "Differentiate among management accounting responsibility centers (i.e., cost, profit, investment,revenue) (FI:717) ",
+    text: "\n\nManagement accounting responsibility centers are crucial for evaluating the performance of different segments of an organization. The four types of responsibility centers are cost centers, profit centers, investment centers, and revenue centers. Cost centers focus on controlling and managing costs, while profit centers aim to generate revenue and manage costs to produce a profit. Investment centers are responsible for managing assets and making investment decisions, while revenue centers focus on generating revenue. Each responsibility center has a specific focus and is evaluated based on different performance metrics. By analyzing the performance of each center, organizations can make informed decisions on resource allocation, investment, and overall management of their operations. Ultimately, the appropriate use of responsibility centers can lead to improved efficiency and profitability for a business.",
     category: ["FINANCE"],
   },
   {
@@ -9238,7 +9246,7 @@ export const data: Datashape[] = [
   {
     area: "Instructional Area: Professional Development ",
     indicator:
-      "Discuss the roles and responsibilities of accounting-standards-setting bodies (i.e., SEC, FASB, IASB, GASB) (PD:295) ",
+      "Discuss the roles and responsibilities of accounting-standards-setting bodies (i.e., SEC, FASB, IASB,GASB) (PD:295) ",
     text: "\n\nAccounting-standards-setting bodies are responsible for setting the standards and regulations that govern the accounting industry. The most prominent of these bodies are the Securities and Exchange Commission (SEC), the Financial Accounting Standards Board (FASB), the International Accounting Standards Board (IASB), and the Governmental Accounting Standards Board (GASB). \n\nThe SEC is responsible for setting the rules and regulations that govern the accounting industry in the United States. It is responsible for ensuring that all public companies comply with the Generally Accepted Accounting Principles (GAAP). \n\nThe FASB is responsible for setting the accounting standards that are used by all public companies in the United States. It is responsible for developing and issuing new accounting standards, as well as revising existing standards. \n\nThe IASB is responsible for setting the international accounting standards that are used by companies around the world. It is responsible for developing and issuing new accounting standards, as well as revising existing standards. \n\nThe GASB is responsible for setting the accounting standards that are used by state and local governments in the United States. It is responsible for developing and issuing new accounting standards, as well as revising existing standards. \n\nOverall, these accounting-standards-setting bodies are responsible for setting the standards and regulations that govern the accounting industry. They are responsible for ensuring that all public companies, international companies, and state and local governments comply with the Generally Accepted Accounting Principles (GAAP).",
     category: ["FINANCE"],
   },
@@ -9631,8 +9639,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Professional Development ",
-    indicator: "(PD:288) ",
-    text: "\n\nThe prompt is referring to page 288 of a book or document. Without knowing the context of the prompt, it is difficult to provide an explanation.",
+    indicator:
+      "Describe types of banking institutions (e.g., central banks, retail banks, universal banks, etc.)  (PD:288) ",
+    text: "\n\nThere are different types of banking institutions that serve various functions in the financial system. Central banks, such as the Federal Reserve or the European Central Bank, are responsible for regulating monetary policy, managing currency, and overseeing the stability of the financial system. Retail banks, also known as commercial banks, provide services to individuals and businesses, including deposit accounts, loans, credit cards, and other financial products. Investment banks specialize in underwriting and selling securities, mergers and acquisitions, and other corporate finance services. Universal banks combine the services of commercial and investment banks, providing a wide range of financial products and services to both individuals and businesses. Credit unions are nonprofit financial cooperatives owned by their members and provide services similar to retail banks. Understanding the different types of banking institutions is crucial for individuals and businesses to make informed decisions regarding their financial needs.",
     category: ["FINANCE"],
   },
   {
@@ -9655,8 +9664,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Business Law ",
-    indicator: "(BL:155) ",
-    text: '\n\nBL:155 is a reference to the Bible verse Luke 1:55, which reads: "He has filled the hungry with good things and sent the rich away empty." This verse is a reminder of God\'s promise to provide for those in need and to not favor the wealthy. It is a call to action for Christians to help those in need and to not be swayed by the temptations of wealth.',
+    indicator:
+      "Comply with financial reporting and internal control laws and regulations in corporate finance(BL:155) ",
+    text: "\n\nComplying with financial reporting and internal control laws and regulations is crucial in corporate finance to ensure accuracy and transparency in financial reporting. Financial reporting laws require organizations to prepare financial statements that accurately reflect their financial position and performance, and to disclose relevant information to stakeholders. Internal control laws require organizations to implement internal controls to safeguard assets, prevent fraud, and ensure compliance with laws and regulations. Compliance with these laws and regulations helps to build trust with stakeholders and mitigate financial risks. To comply with financial reporting and internal control laws and regulations, organizations need to establish and maintain effective financial management systems, implement strong internal controls, and have appropriate procedures for monitoring compliance.",
     category: ["FINANCE"],
   },
   {
@@ -9924,8 +9934,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Financial Analysis ",
-    indicator: "(FI:768) ",
-    text: "\n\nFI:768 refers to the Financial Industry Regulatory Authority (FINRA) Rule 768, which requires broker-dealers to provide customers with a written statement of their rights and responsibilities when opening an account. The statement must include information about the customer's rights to receive account statements, to receive confirmation of transactions, and to receive information about the broker-dealer's services. The rule also requires broker-dealers to provide customers with a copy of the FINRA Customer Account Agreement.",
+    indicator:
+      "Perform budgetary cost analysis (e.g., direct cost, indirect cost, sunk cost, differential cost, etc.) (FI:768) ",
+    text: "\n\nBudgetary cost analysis is a method used in corporate finance to determine the cost and benefits of various decisions. There are different types of costs involved in budgetary cost analysis, including direct costs, indirect costs, sunk costs, and differential costs. Direct costs are expenses that can be directly attributed to a specific product, service, or project, such as materials, labor, and equipment. Indirect costs are expenses that cannot be directly traced to a particular product or service, such as rent, utilities, and administrative costs. Sunk costs are costs that have already been incurred and cannot be recovered, such as research and development expenses. Differential costs are the difference in costs between two or more options, such as the cost of producing one product versus another. By analyzing these different types of costs, companies can make informed decisions about their budget, investments, and overall financial strategy.",
     category: ["FINANCE"],
   },
   {
@@ -10028,14 +10039,16 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Professional Development ",
-    indicator: "etc.) (PD:221) ",
-    text: '\n\nThe prompt is: Explain the concept of "cultural relativism."\n\nCultural relativism is the idea that the values, beliefs, and practices of a culture should be understood and judged in the context of that culture\'s own beliefs and values. It is the belief that no culture is superior to another and that all cultures should be respected and accepted. Cultural relativism recognizes that different cultures have different ways of looking at the world and that these different perspectives should be respected and appreciated.',
+    indicator:
+      "Explain professional designations in the field of business finance (e.g., CF, CFA, CCM, CTP, CFM, etc.) (PD:221) ",
+    text: "\n\nThere are several professional designations available in the field of business finance, each representing a different level of expertise and specialization. Some of the most common designations include CF (Certified Finance Professional), CFA (Chartered Financial Analyst), CCM (Certified Cash Manager), CTP (Certified Treasury Professional), and CFM (Certified Financial Manager). These designations typically require passing an exam and meeting specific education and experience requirements. For example, the CFA designation is one of the most prestigious and requires several years of experience and passing a series of rigorous exams covering topics such as investment analysis, economics, and ethics. These designations can enhance ones credibility and expertise in the field, and can also lead to career advancement and higher salaries.",
     category: ["FINANCE"],
   },
   {
     area: "Instructional Area: Professional Development ",
-    indicator: "GASB) (PD:295) ",
-    text: "\n\nGASB stands for Governmental Accounting Standards Board. It is an independent organization that sets accounting standards for state and local governments in the United States. These standards are used to ensure that financial information is reported accurately and consistently. GASB's standards are based on Generally Accepted Accounting Principles (GAAP) and are designed to ensure that governments are transparent and accountable to their citizens.",
+    indicator:
+      "Discuss the roles and responsibilities of accounting-standards-setting bodies (i.e., SEC, FASB, IASB, GASB) (PD:295) ",
+    text: "\n\nAccounting-standards-setting bodies, such as the SEC (Securities and Exchange Commission), FASB (Financial Accounting Standards Board), IASB (International Accounting Standards Board), and GASB (Governmental Accounting Standards Board), are responsible for developing and setting accounting standards that organizations must follow in financial reporting. The SEC is a government agency that oversees the financial markets and has the authority to set accounting standards for publicly traded companies in the United States. The FASB and IASB are private, non-profit organizations that set accounting standards for private and public companies globally. The GASB sets accounting standards for state and local governments in the United States. These organizations play a crucial role in ensuring financial transparency and consistency in financial reporting. Their responsibilities include developing and issuing accounting standards, providing guidance on the application of those standards, and updating and revising standards as needed to reflect changes in the business environment. Compliance with these standards is essential to maintain the integrity of financial reporting and to provide accurate and reliable financial information to stakeholders.",
     category: ["FINANCE"],
   },
   {
@@ -10712,8 +10725,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Professional Development ",
-    indicator: "(PD:231) ",
-    text: '\n\nThe prompt is "PD:231" which is likely referring to page 231 of a book or document. Without knowing the context of the prompt, it is difficult to provide an explanation.',
+    indicator:
+      "Describe the role and responsibilities of individuals in the securities and investments industry (PD:231) ",
+    text: "\n\nIndividuals in the securities and investments industry play a crucial role in facilitating the buying and selling of financial assets, such as stocks, bonds, and derivatives. Their responsibilities include providing investment advice, managing investment portfolios, analyzing financial markets, and executing trades on behalf of clients. Some common roles in the industry include investment bankers, stockbrokers, financial analysts, portfolio managers, and traders. They are also responsible for maintaining compliance with regulatory requirements, such as licensing and registration with industry regulators like the SEC (Securities and Exchange Commission) or FINRA (Financial Industry Regulatory Authority). These individuals must also adhere to ethical standards and maintain the confidentiality and privacy of their clients information. The securities and investments industry plays a critical role in driving economic growth and providing individuals and organizations with opportunities to invest and grow their wealth.",
     category: ["FINANCE"],
   },
   {
@@ -13218,8 +13232,9 @@ export const data: Datashape[] = [
   },
   {
     area: "Instructional Area: Product/Service Management ",
-    indicator: "concept) (PM:313) ",
-    text: "\n\nPM:313 is a concept that refers to the idea that project management is a process of balancing the competing demands of scope, time, cost, quality, resources, and risk to achieve project objectives. It is based on the principles of the Project Management Institute (PMI) and is used to guide project managers in their decision-making and planning. PM:313 emphasizes the importance of understanding the project environment, setting realistic goals, and managing resources effectively to ensure successful project completion.",
+    indicator:
+      "Describe foodservice branding strategies (e.g., retail-item, restaurant, in-house/signature, branded concept) (PM:313) ",
+    text: "\n\nIn-house/signature branding involves branding a specific menu item that is unique to the restaurant and cannot be found anywhere else. This can create a sense of exclusivity and uniqueness for the restaurant and help to differentiate it from competitors. For example, a restaurant might offer a special dish made with a secret family recipe that is only available at that specific location. Branded concept branding involves developing a unique concept for the restaurant that can be replicated across multiple locations. This can include a specific theme or cuisine, such as a Mexican or Italian restaurant, or a unique dining experience, such as a dinner theater or rooftop bar. The goal of these branding strategies is to create a memorable and distinctive image for the restaurant that will attract and retain customers, and ultimately lead to business success.",
     category: ["HOSPITIALITY"],
   },
   {

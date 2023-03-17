@@ -1,13 +1,13 @@
 "use client";
 
 import { trpc } from "../../utils/trpcProvider";
-import { data } from "../../../public/data/cleanData";
+import { data } from "../../../public/data/cleanestData";
 import { wait } from "../../utils/wait";
 
 const Seed = () => {
   const mutation = trpc.seed.seedIndicators.useMutation();
   const onClick = async () => {
-    for (let obj of data) {
+    for (const obj of data) {
       mutation.mutate(obj);
       await wait(25);
     }
