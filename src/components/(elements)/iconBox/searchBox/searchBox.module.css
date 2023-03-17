@@ -16,11 +16,16 @@
   padding: 0px 10px;
 }
 
+.searchBox > form {
+  width: 100%;
+}
+
 .searchBox > form > input {
   flex-grow: 1;
   outline: none;
   border: none;
   font-size: 14px;
+  width: 100%;
 }
 
 .spinner {
